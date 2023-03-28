@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Dclaro"
         tools:targetApi="31">
         <activity
-            android:name=".DEclaracionesObligaActivity"
+            android:name=".DeclaracionesObligaActivity"
             android:exported="false" />
         <activity
             android:name=".SeleccionFacturaActivity"
