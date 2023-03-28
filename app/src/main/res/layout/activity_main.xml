@@ -25,7 +25,7 @@
             android:id="@+id/tv_nombreApp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/manrope_Bold"
+            android:fontFamily="@font/manrope_bold"
             android:text="claro"
             android:textColor="@color/verdePalo"
             android:textSize="98sp"
