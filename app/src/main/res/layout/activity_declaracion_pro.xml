@@ -1,48 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBFBFB"
+    android:background="@color/verdePaloMuyClaro"
+    android:orientation="vertical"
     tools:context=".DeclaracionProActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_declaracionProvisional"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/declarap"
-        android:textColor="@color/teal_700"
-        android:textColorLink="@color/teal_700"
+        android:textColor="@color/colorElementosOscuros"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
+        android:fontFamily="@font/manrope_bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"/>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_bienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido"
-        android:textColor="@color/teal_700"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.038" />
+        android:text="Bienvenido Juan Pérez"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="20sp"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/periocidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RFC: PERJ201288IQ02"
+        android:textColor="@color/colorElementosOscuros"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/verdePaloClaro"
+        android:elevation="20dp"/>
 
     <Button
         android:id="@+id/tipodedeclaracion"
         android:layout_width="302dp"
         android:layout_height="42dp"
-        android:backgroundTint="@color/botones"
+        android:backgroundTint="@color/colorElementosOscuros"
         android:foregroundTint="#009688"
         android:text="Tipo de declaracion"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/colorElementosOscuros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -51,28 +61,13 @@
         app:layout_constraintVertical_bias="0.135" />
 
     <Button
-        android:id="@+id/periocidad"
-        android:layout_width="302dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/botones"
-        android:foregroundTint="#009688"
-        android:text="Periocidad"
-        android:textColor="@color/teal_700"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.304" />
-
-    <Button
         android:id="@+id/ejecrcicio"
         android:layout_width="302dp"
         android:layout_height="42dp"
-        android:backgroundTint="@color/botones"
+        android:backgroundTint="@color/colorElementosOscuros"
         android:foregroundTint="#009688"
         android:text="Ejercicio"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/colorElementosOscuros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -84,10 +79,10 @@
         android:id="@+id/periodo"
         android:layout_width="302dp"
         android:layout_height="42dp"
-        android:backgroundTint="@color/botones"
+        android:backgroundTint="@color/colorElementosOscuros"
         android:foregroundTint="#009688"
         android:text="Periodo"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/colorElementosOscuros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -95,4 +90,4 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.622" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

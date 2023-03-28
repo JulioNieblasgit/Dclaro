@@ -12,6 +12,5 @@
     <string name="inicioSesion">Inicio de sesión</string>
     <string name="rfc">RFC</string>
     <string name="contrasena">Contraseña</string>
-    <string name="entrar">Entrar</string>
-    <string name="declarap">Declaracion Privocional</string>
+    <string name="declarap">Declaración provicional</string>
 </resources>
