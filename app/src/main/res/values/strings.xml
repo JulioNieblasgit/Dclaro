@@ -12,5 +12,8 @@
     <string name="inicioSesion">Inicio de sesión</string>
     <string name="rfc">RFC</string>
     <string name="contrasena">Contraseña</string>
-    <string name="declarap">Declaración provicional</string>
+    <string name="declaraP">Declaración provicional</string>
+    <string name="obligaR">Obligaciones registradas</string>
+    <string name="descLlenadoDeclaracion">Descripción de los pasos para el llenado de la declaración.</string>
+    <string name="pasosLlenadoDelcaracion">1. Ingresa a cada una de las secciones siguientes y captura la información solicitada correspondiente al periodo que estás declarando. \n 2. Selecciona el botón "Enviar declaración" para realizar el envío. \n 3. Se generará el acudo de recibo de la declaración.</string>
 </resources>

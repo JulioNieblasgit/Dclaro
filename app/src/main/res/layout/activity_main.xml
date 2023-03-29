@@ -16,20 +16,9 @@
 
         <ImageView
             android:id="@+id/iv_iconoApp"
-            android:layout_width="82dp"
-            android:layout_height="72dp"
-            app:srcCompat="@drawable/simbolo1_mdpi"
-            android:layout_gravity="center_vertical"/>
-
-        <TextView
-            android:id="@+id/tv_nombreApp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/manrope_bold"
-            android:text="claro"
-            android:textColor="@color/verdePalo"
-            android:textSize="98sp"
-            android:textStyle="bold"
+            app:srcCompat="@drawable/logo1_hdpi"
             android:layout_gravity="center_vertical"/>
 
     </LinearLayout>

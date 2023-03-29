@@ -12,7 +12,7 @@
         android:id="@+id/tv_declaracionProvisional"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/declarap"
+        android:text="@string/declaraP"
         android:textColor="@color/colorElementosOscuros"
         android:textSize="24sp"
         android:fontFamily="@font/manrope_bold"
