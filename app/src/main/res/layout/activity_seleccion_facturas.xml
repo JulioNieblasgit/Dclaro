@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/gradient_2"
-    tools:context=".SeleccionFacturaActivity">
+    tools:context=".SeleccionFacturasActivity">
 
     <TextView
         android:id="@+id/tv_obligacionesRegistradas"
@@ -23,7 +23,7 @@
         android:id="@+id/tv_rfc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RFC: PERJ201288IQ02"
+        android:text="@string/fillRFC"
         android:textColor="@color/colorElementosOscuros"
         android:textSize="20sp"
         android:fontFamily="@font/manrope_medium"

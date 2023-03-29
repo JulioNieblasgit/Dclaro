@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdePaloMuyClaro"
+    android:orientation="vertical"
+    tools:context=".DeclaracionProvisionalActivity">
+
+    <TextView
+        android:id="@+id/tv_declaracionProvisional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/declaraP"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="24sp"
+        android:fontFamily="@font/manrope_bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/tv_bienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido Juan Pérez"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="20sp"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_rfc"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fillRFC"
+        android:textColor="@color/colorElementosOscuros"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/verdePaloClaro"/>
+
+    <Button
+        android:id="@+id/btn_tipoDeclaracion"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Tipo de declaración"
+        android:textColor="@color/colorElementosOscuros"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/verdePaloClaro"/>
+
+    <Button
+        android:id="@+id/btn_periocidad"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Periocidad"
+        android:textColor="@color/colorElementosOscuros"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/verdePaloClaro"/>
+
+    <Button
+        android:id="@+id/btn_ejercicio"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio"
+        android:textColor="@color/colorElementosOscuros"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/verdePaloClaro"/>
+
+    <Button
+        android:id="@+id/btn_periodo"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Periodo"
+        android:textColor="@color/colorElementosOscuros"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/verdePaloClaro"/>
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:enabled="true"
+        android:text="Siguiente"
+        android:textSize="18sp"
+        android:layout_marginTop="140dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/manrope_bold"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/colorElementosClaros"
+        android:textColor="@color/verdePaloMuyClaro"
+        android:paddingHorizontal="40dp" />
+
+</LinearLayout>

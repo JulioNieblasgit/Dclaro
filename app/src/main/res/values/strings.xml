@@ -18,4 +18,15 @@
     <string name="pasosLlenadoDelcaracion">1. Ingresa a cada una de las secciones siguientes y captura la información solicitada correspondiente al periodo que estás declarando. \n 2. Selecciona el botón "Enviar declaración" para realizar el envío. \n 3. Se generará el acudo de recibo de la declaración.</string>
     <string name="isr">ISR PERSONAS FÍSICAS, ACTIVIDAD EMPRESARIAL Y PROFESIONAL</string>
     <string name="iva">IMPUESTO AL VALOR AGREGADO</string>
+    <string name="declaraC">Declarar en ceros</string>
+    <string name="notaDeclaraC">Para poder presentar tu declaración mensual en ceros es necesario no haber presentado ninguna actividad en todo el mes. Es decir, no hacer entrega de ningún comprobante electrónico.</string>
+    <string name="consultaD">Consulta de la declaración</string>
+    <string name="fillRFC">RFC: PERJ201288IQ02</string>
+    <string name="consultaO">Consulta de la obligación</string>
+    <string name="declaraPagadas">Declaraciones pagadas</string>
+    <string name="acuse">Acuse de recibo de la declaración</string>
+    <string name="descISR">ISR personas físicas, actividad empresarial y profesional</string>
+    <string name="descIVA">Impuesto al valor agregado</string>
+    <string name="descBtnImpuesto">Determinación del impuesto</string>
+    <string name="descBtnPago">Determinación del pago</string>
 </resources>

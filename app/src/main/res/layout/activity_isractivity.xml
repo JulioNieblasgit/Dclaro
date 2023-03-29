@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/verdePaloMuyClaro"
+    tools:context=".ISRActivity">
+
+    <TextView
+        android:id="@+id/tv_ISR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ISR"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="24sp"
+        android:fontFamily="@font/manrope_bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/tv_descISR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descISR"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="14sp"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_rfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fillRFC"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="20sp"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_determImpuest"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/descBtnImpuesto"
+            android:fontFamily="@font/manrope_bold"
+            app:backgroundTint="@color/colorElementosOscuros"
+            android:textColor="@color/verdePaloMuyClaro"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:background="@drawable/forma_2"
+            android:paddingVertical="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_determPago"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/descBtnPago"
+            android:textSize="12sp"
+            android:fontFamily="@font/manrope_bold"
+            app:backgroundTint="@color/verdePalo"
+            android:textColor="@color/colorElementosOscuros"
+            android:textAllCaps="false"
+            android:background="@drawable/forma_3"
+            android:paddingVertical="10dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_campos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="50dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresos de periodos anteriores"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresos del periodo"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total de ingresos"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total de ingresos acumulables"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compras y gastos de periodos anteriores"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compras y gastos del periodo"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otros campos"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total de exentos"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deducción de inversiones de ejercicios anteriores"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pérdidas fiscales de ejercicios anteriores"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Base gravable del pago provisional"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estímulos acreditables"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
