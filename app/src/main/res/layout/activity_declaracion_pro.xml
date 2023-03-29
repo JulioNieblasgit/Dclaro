@@ -31,8 +31,8 @@
         android:layout_marginTop="5dp"/>
 
     <TextView
-        android:id="@+id/periocidad"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_rfc"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:text="RFC: PERJ201288IQ02"
         android:textColor="@color/colorElementosOscuros"
@@ -40,54 +40,80 @@
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"
         android:paddingVertical="10dp"
-        android:paddingHorizontal="70dp"
+        android:paddingHorizontal="20dp"
         android:layout_marginTop="40dp"
-        android:background="@color/verdePaloClaro"
-        android:elevation="20dp"/>
+        android:background="@color/verdePaloClaro"/>
 
     <Button
-        android:id="@+id/tipodedeclaracion"
-        android:layout_width="302dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/colorElementosOscuros"
-        android:foregroundTint="#009688"
-        android:text="Tipo de declaracion"
+        android:id="@+id/btn_tipoDeclaracion"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Tipo de declaración"
         android:textColor="@color/colorElementosOscuros"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.135" />
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/verdePaloClaro"/>
 
     <Button
-        android:id="@+id/ejecrcicio"
-        android:layout_width="302dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/colorElementosOscuros"
-        android:foregroundTint="#009688"
+        android:id="@+id/btn_periocidad"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Periocidad"
+        android:textColor="@color/colorElementosOscuros"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/verdePaloClaro"/>
+
+    <Button
+        android:id="@+id/btn_ejercicio"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
         android:text="Ejercicio"
         android:textColor="@color/colorElementosOscuros"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.445" />
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/verdePaloClaro"/>
 
     <Button
-        android:id="@+id/periodo"
-        android:layout_width="302dp"
-        android:layout_height="42dp"
-        android:backgroundTint="@color/colorElementosOscuros"
-        android:foregroundTint="#009688"
+        android:id="@+id/btn_periodo"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
         android:text="Periodo"
         android:textColor="@color/colorElementosOscuros"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.622" />
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/verdePaloClaro"/>
+
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:enabled="true"
+        android:text="Siguiente"
+        android:textSize="18sp"
+        android:layout_marginTop="140dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/manrope_bold"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/colorElementosClaros"
+        android:textColor="@color/verdePaloMuyClaro"
+        android:paddingHorizontal="40dp" />
 
 </LinearLayout>
