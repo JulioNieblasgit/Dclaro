@@ -36,7 +36,7 @@
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        android:background="@color/colorElementosClaros"
+        android:background="@drawable/forma"
         android:paddingVertical="20dp"
         android:paddingHorizontal="20dp"
         android:elevation="20dp">
@@ -58,6 +58,115 @@
             android:textColor="@color/verdePaloMuyClaro"
             android:fontFamily="@font/manrope_medium"
             android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/isr"
+                        android:fontFamily="@font/manrope_medium"
+                        android:textColor="@color/colorElementosOscuros"/>
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vencimiento: día/mes/año"
+                        android:fontFamily="@font/manrope_medium"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/material_symbols_check_circle_outline_rounded_mdpi"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@color/colorElementosOscuros"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/iva"
+                        android:fontFamily="@font/manrope_medium"
+                        android:textColor="@color/colorElementosOscuros"/>
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vencimiento: día/mes/año"
+                        android:fontFamily="@font/manrope_medium"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/material_symbols_check_circle_outline_rounded_mdpi"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:enabled="true"
+            android:text="Siguiente"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/manrope_bold"
+            android:background="@drawable/round_button"
+            app:backgroundTint="@color/colorElementosClaros"
+            android:textColor="@color/verdePaloMuyClaro"
+            android:paddingHorizontal="40dp"
+            android:layout_marginTop="10dp"/>
 
     </LinearLayout>
 
