@@ -1,75 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_2"
     tools:context=".SeleccionFacturaActivity">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tv_obligacionesRegistradas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seleccion De facturas"
-        android:textColor="@color/verdePaloClaro"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="144dp"
-        android:layout_height="121dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262"
-        app:srcCompat="@drawable/material_symbols_add_circle_rounded_hdpi" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agregar Facturas"
+        android:text="@string/obligaR"
         android:textColor="@color/colorElementosOscuros"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.456" />
+        android:fontFamily="@font/manrope_bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"/>
 
-    <Button
-        android:id="@+id/declaraenceros"
-        android:layout_width="181dp"
-        android:layout_height="51dp"
-        android:backgroundTint="@color/colorElementosOscuros"
-        android:text="Declarar En ceros"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+    <TextView
+        android:id="@+id/tv_rfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RFC: PERJ201288IQ02"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="20sp"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
 
-    <Button
-        android:id="@+id/cargarseccion"
-        android:layout_width="181dp"
-        android:layout_height="51dp"
-        android:backgroundTint="@color/colorElementosOscuros"
-        android:text="Cargar Seccion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+    <ImageButton
+        android:layout_marginTop="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#00FFFFFF"
+        android:src="@drawable/material_symbols_add_circle_rounded_xxxhdpi"
+        android:scaleType="fitXY"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar facturas"
+        android:fontFamily="@font/manrope_bold"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="22sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="140dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp">
+
+        <Button
+            android:id="@+id/btn_declararCeros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="Declarar ceros"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/manrope_bold"
+            android:background="@drawable/round_button"
+            app:backgroundTint="@color/colorElementosClaros"
+            android:textColor="@color/verdePaloMuyClaro"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_cargarSeleccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="Cargar selección"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/manrope_bold"
+            android:background="@drawable/round_button"
+            app:backgroundTint="@color/colorElementosClaros"
+            android:textColor="@color/verdePaloMuyClaro"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
