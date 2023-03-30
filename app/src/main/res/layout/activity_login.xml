@@ -88,4 +88,21 @@
         android:textColor="@color/verdePaloMuyClaro"
         android:paddingHorizontal="40dp"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/healthicons_fingerprint_outline_hdpi"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar con huella"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="14sp"
+        android:fontFamily="@font/manrope_regular"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
 </LinearLayout>
