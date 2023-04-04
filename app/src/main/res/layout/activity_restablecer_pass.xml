@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/verdePaloMuyClaro"
-    tools:context=".RestablecerContraseniaActivity">
+    tools:context=".RestablecerPassActivity">
 
 
     <TextView
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/forma"
         android:paddingVertical="20dp"
         android:paddingHorizontal="20dp"
@@ -51,26 +51,19 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_introduceContrasenia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/introduceContrasenia"
         android:textColor="@color/colorElementosOscuros"
+        android:fontFamily="@font/manrope_bold"
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"/>
 
-    <ScrollView
-        android:id="@+id/sv_campos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="50dp"
-        android:scrollbars="none">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="40dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
         android:orientation="vertical">
 
         <TextView
@@ -78,13 +71,15 @@
             android:layout_height="wrap_content"
             android:text="@string/nuevaContrasenia"
             android:textColor="@color/colorElementosOscuros"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/manrope_medium"/>
 
         <EditText
+            android:id="@+id/et_nuevoPassword"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/verdePalo"
+            android:background="@color/verdePaloClaro"
             android:paddingVertical="6dp"
             android:paddingHorizontal="10dp"
             android:fontFamily="@font/manrope_bold"
@@ -98,13 +93,15 @@
             android:layout_height="wrap_content"
             android:text="@string/repiteContrasenia"
             android:textColor="@color/colorElementosOscuros"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/manrope_medium"/>
 
         <EditText
+            android:id="@+id/et_repitaPassword"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/verdePalo"
+            android:background="@color/verdePaloClaro"
             android:paddingVertical="6dp"
             android:paddingHorizontal="10dp"
             android:fontFamily="@font/manrope_bold"
@@ -113,19 +110,17 @@
             android:textAlignment="textStart"
             android:inputType="textPassword"/>
 
-
     </LinearLayout>
 
-    </ScrollView>
     <Button
-        android:id="@+id/btn_confirmarContrasenia"
+        android:id="@+id/btn_confirmar"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:enabled="true"
         android:text="Confirmar"
         android:textSize="18sp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:textAllCaps="false"
         android:background="@drawable/round_button"
         app:backgroundTint="@color/colorElementosClaros"

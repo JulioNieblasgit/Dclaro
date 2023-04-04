@@ -6,112 +6,155 @@
     android:layout_height="match_parent"
     tools:context=".PerfilActivity"
     android:orientation="vertical"
-    android:background="@color/verdePaloMuyClaro">
+    android:background="@drawable/gradient_3">
 
-    <ScrollView
-        android:id="@+id/sv_campos"
+    <ImageView
+        android:id="@+id/iv_perfil"
+        android:layout_width="211dp"
+        android:layout_height="196dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_user"/>
+
+    <TextView
+        android:id="@+id/tv_nombrePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juan Pérez"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="25sp"
+        android:fontFamily="@font/manrope_bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+   <TextView
+       android:id="@+id/tv_rfc"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/fillRFC"
+       android:textColor="@color/colorElementosOscuros"
+       android:textSize="20sp"
+       android:fontFamily="@font/manrope_medium"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="5dp"/>
+
+   <Button
+       android:id="@+id/btn_domicilioFiscal"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:enabled="true"
+       android:text="Domicilio fiscal"
+       android:textSize="18sp"
+       android:layout_marginTop="40dp"
+       android:textAllCaps="false"
+       android:background="@drawable/round_button"
+       android:paddingHorizontal="40dp"/>
+
+   <Button
+       android:id="@+id/btn_correoElectronico"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:enabled="true"
+       android:text="Correo electrónico"
+       android:textSize="18sp"
+       android:layout_marginTop="25dp"
+       android:textAllCaps="false"
+       android:background="@drawable/round_button"
+       android:paddingHorizontal="40dp"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="50dp"
-        android:scrollbars="none">
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="60dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="40dp"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/iv_perfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="52dp"
-                android:src="@drawable/simbolo1_mdpi"
-                android:layout_gravity="center_horizontal"/>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tv_nombrePerfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Juan Pérez"
-                android:textColor="@color/colorElementosOscuros"
-                android:textSize="25sp"
-                android:fontFamily="@font/manrope_bold"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
-
-            <TextView
-                android:id="@+id/tv_RFCperfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RFC: PERJ201288IQ02"
-                android:textColor="@color/colorElementosOscuros"
-                android:textSize="20sp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"/>
-
-            <Button
-                android:id="@+id/btn_domicilioFiscal"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:enabled="true"
-                android:text="Domicilio fiscal"
-                android:textSize="18sp"
-                android:layout_marginTop="40dp"
-                android:textAllCaps="false"
-                android:background="@drawable/round_button"
-                android:paddingHorizontal="40dp"/>
-
-            <Button
-                android:id="@+id/btn_correoElectronico"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:enabled="true"
-                android:text="Correo electronico"
-                android:textSize="18sp"
-                android:layout_marginTop="25dp"
-                android:textAllCaps="false"
-                android:background="@drawable/round_button"
-                android:paddingHorizontal="40dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="Activar huella"
                 android:textColor="@color/colorElementosOscuros"
                 android:textSize="18sp"
-                android:layout_marginTop="35dp"/>
+                android:fontFamily="@font/manrope_medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_switch_on"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="Declaración en ceros"
                 android:textColor="@color/colorElementosOscuros"
                 android:textSize="18sp"
-                android:layout_marginTop="20dp"/>
+                android:fontFamily="@font/manrope_medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_switch_on"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="Activar otros campos"
                 android:textColor="@color/colorElementosOscuros"
                 android:textSize="18sp"
-                android:layout_marginTop="20dp"/>
+                android:fontFamily="@font/manrope_medium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_switch_on"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="Cambiar contraseña"
                 android:textColor="@color/colorElementosOscuros"
                 android:textSize="18sp"
-                android:layout_marginTop="40dp"/>
+                android:fontFamily="@font/manrope_medium"/>
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_llave"/>
 
         </LinearLayout>
 
-    </ScrollView>
+    </LinearLayout>
 
 </LinearLayout>
 

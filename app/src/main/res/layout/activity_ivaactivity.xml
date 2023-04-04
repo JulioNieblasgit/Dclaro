@@ -216,6 +216,109 @@
                 android:textColorHint="@color/colorElementosOscuros"
                 android:textAlignment="textEnd"/>
 
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IVA retenido"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Tienes otras cantidades a cargo?"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verdePalo"
+                android:entries="@array/binaryChoice"
+                android:fontFamily="@font/manrope_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad a cargo"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Tienes otras cantidades a favor?"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verdePalo"
+                android:entries="@array/binaryChoice"
+                android:fontFamily="@font/manrope_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad a cargo"
+                android:fontFamily="@font/manrope_medium"
+                android:textColor="@color/colorElementosOscuros"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0.00"
+                android:background="@color/verdePalo"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorElementosOscuros"
+                android:textColorHint="@color/colorElementosOscuros"
+                android:textAlignment="textEnd"/>
+
         </LinearLayout>
 
     </ScrollView>

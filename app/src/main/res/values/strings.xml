@@ -30,17 +30,8 @@
     <string name="descBtnImpuesto">Determinación del impuesto</string>
     <string name="descBtnPago">Determinación del pago</string>
     <string name="restablecerContrasenia">Restablecer contraseña</string>
-    <string name="especificacionesContrasenia">1. La longitud de contraseña debe ser mayor de 8 caracteres.
-2. Los únicos caracteres aceptados deben ser de la "a" a la "z" y de 0 al 9.
-3. No se acepta el RFC.
-4. No se permiten caracteres especiales. </string>
-    <string name="introduceContrasenia">Introduce su nueva contraseña</string>
+    <string name="especificacionesContrasenia">1. La longitud de contraseña debe ser mayor de 8 caracteres. \n2. Los únicos caracteres aceptados deben ser de la "a" a la "z" y de 0 al 9. \n3. No se acepta el RFC. \n4. No se permiten caracteres especiales. </string>
+    <string name="introduceContrasenia">Introduzca su nueva contraseña</string>
     <string name="nuevaContrasenia">Nueva contraseña</string>
-    <string name="repiteContrasenia">Repite la nueva contraseña</string>
-
-
-
-
-
-
+    <string name="repiteContrasenia">Repita su nueva contraseña</string>
 </resources>
