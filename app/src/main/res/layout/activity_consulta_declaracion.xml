@@ -44,33 +44,31 @@
         android:layout_marginTop="40dp"
         android:background="@color/verdePaloClaro"/>
 
-    <Button
-        android:id="@+id/btn_declaracion"
+    <Spinner
         android:layout_width="325dp"
         android:layout_height="wrap_content"
-        android:text="Declaración"
-        android:textColor="@color/colorElementosOscuros"
-        android:fontFamily="@font/manrope_medium"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
+        android:background="@color/verdePaloClaro"
+        android:entries="@array/tipoDeclaracion"
+        android:fontFamily="@font/manrope_bold"
+        android:paddingHorizontal="10dp"
         android:paddingVertical="10dp"
-        android:paddingHorizontal="20dp"
         android:layout_marginTop="10dp"
-        app:backgroundTint="@color/verdePaloClaro"/>
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorElementosOscuros"
+        android:textColorHint="@color/colorElementosOscuros" />
 
-    <Button
-        android:id="@+id/btn_ejercicio"
+    <Spinner
         android:layout_width="325dp"
         android:layout_height="wrap_content"
-        android:text="Ejercicio"
-        android:textColor="@color/colorElementosOscuros"
-        android:fontFamily="@font/manrope_medium"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
+        android:background="@color/verdePaloClaro"
+        android:entries="@array/ejercicio"
+        android:fontFamily="@font/manrope_bold"
+        android:paddingHorizontal="10dp"
         android:paddingVertical="10dp"
-        android:paddingHorizontal="20dp"
         android:layout_marginTop="10dp"
-        app:backgroundTint="@color/verdePaloClaro"/>
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorElementosOscuros"
+        android:textColorHint="@color/colorElementosOscuros" />
 
     <Button
         android:id="@+id/btn_buscar"

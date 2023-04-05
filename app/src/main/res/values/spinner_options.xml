@@ -1,11 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- The order of these is important, don't reorder without changing Contacts.java --> <skip />
-    <!-- Organization types from android.provider.Contacts. This could be used when adding a new organization for a contact, for example. -->
     <string-array name="binaryChoice">
         <item>SÍ</item>
         <item>NO</item>
+    </string-array>
+
+    <string-array name="tipoDeclaracion">
+        <item>Declaración</item>
+        <item>Normal</item>
+        <item>Complementaria</item>
+    </string-array>
+
+    <string-array name="periocidad">
+        <item>Periocidad</item>
+        <item>1.- Mensual</item>
+        <item>2.- Trimestral</item>
+        <item>3.- Cuatrimestral</item>
+        <item>4.- Semestral</item>
+    </string-array>
+
+    <string-array name="ejercicio">
+        <item>Ejercicio</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+    </string-array>
+
+    <string-array name="impuesto">
+        <item>Impuesto</item>
+        <item>ISR</item>
+        <item>IVA</item>
+    </string-array>
+
+    <string-array name="mensual">
+        <item>Mes</item>
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+    <string-array name="trimestral">
+        <item>1er Enero - Marzo</item>
+        <item>2do Abril - Junio</item>
+        <item>3er Julio - Septiembre</item>
+        <item>4to Octubre - Diciembre</item>
+    </string-array>
+
+    <string-array name="cuatrimestral">
+        <item>1er Enero - Abril</item>
+        <item>2do Mayo - Agosto</item>
+        <item>3er Septiembre - Diciembre</item>
+    </string-array>
+
+    <string-array name="semestral">
+        <item>1er Enero - Junio</item>
+        <item>2do Julio - Diciembre</item>
     </string-array>
 
 </resources>
