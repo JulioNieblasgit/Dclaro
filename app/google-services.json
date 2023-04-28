@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "689057680139",
+    "project_id": "dclaro-14f49",
+    "storage_bucket": "dclaro-14f49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689057680139:android:379f71e45a14273913f00e",
+        "android_client_info": {
+          "package_name": "nieblas.julio.dclaro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689057680139-hpttnot02dc10k23ga8s2qnrmfjfl1qk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nieblas.julio.dclaro",
+            "certificate_hash": "89e58d4bf26370f1a6127b4c9dd6dbc057cd5ea6"
+          }
+        },
+        {
+          "client_id": "689057680139-icn9rvi9g5q1p1curas5s2girj16qg4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFb6r3fZK87koAhMaCKxY4kq7dI-OJ7Ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689057680139-icn9rvi9g5q1p1curas5s2girj16qg4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

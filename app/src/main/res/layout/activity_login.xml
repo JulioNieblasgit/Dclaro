@@ -92,28 +92,28 @@
         android:id="@+id/tv_olvidarPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/manrope_regular"
         android:text="¿Olvidaste tu contraseña?"
         android:textColor="@color/colorElementosOscuros"
-        android:textSize="14sp"
-        android:fontFamily="@font/manrope_regular"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/healthicons_fingerprint_outline_hdpi"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="25dp" />
+        android:textSize="14sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/manrope_regular"
         android:text="Ingresar con huella"
         android:textColor="@color/colorElementosOscuros"
-        android:textSize="14sp"
-        android:fontFamily="@font/manrope_regular"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="25dp"
+        android:src="@drawable/healthicons_fingerprint_outline_hdpi" />
 
 </LinearLayout>
