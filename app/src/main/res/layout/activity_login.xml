@@ -4,89 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    android:background="@color/verdePaloMuyClaro"
     android:orientation="vertical"
-    android:background="@color/verdePaloMuyClaro">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/iv_iconoApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="52dp"
-        android:src="@drawable/simbolo1_mdpi"
-        android:layout_gravity="center_horizontal"/>
+        android:src="@drawable/simbolo1_mdpi" />
 
     <TextView
         android:id="@+id/tv_inicioSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/manrope_bold"
         android:text="@string/inicioSesion"
         android:textColor="@color/colorElementosOscuros"
-        android:textSize="20sp"
-        android:fontFamily="@font/manrope_bold"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tv_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/manrope_regular"
         android:text="Bievenido Juan Pérez"
         android:textColor="@color/colorElementosOscuros"
-        android:textSize="18sp"
-        android:fontFamily="@font/manrope_regular"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"/>
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/et_rfc"
         android:layout_width="344dp"
         android:layout_height="47dp"
-        android:hint="@string/rfc"
-        android:inputType="text"
-        android:selectAllOnFocus="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="@drawable/round_button"
+        android:baselineAligned="false"
+        android:fontFamily="@font/manrope_bold"
+        android:hint="@string/rfc"
+        android:inputType="text"
+        android:paddingHorizontal="40dp"
+        android:selectAllOnFocus="true"
         android:textAlignment="center"
         android:textColor="@color/verdePaloMuyClaro"
-        android:textColorHint="@color/verdePaloMuyClaro"
-        android:fontFamily="@font/manrope_bold"
-        android:paddingHorizontal="40dp"/>
+        android:textColorHint="@color/verdePaloMuyClaro" />
 
     <EditText
         android:id="@+id/et_contrasena"
         android:layout_width="344dp"
         android:layout_height="47dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/manrope_bold"
         android:hint="@string/contrasena"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
+        android:paddingHorizontal="40dp"
         android:selectAllOnFocus="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/round_button"
         android:textAlignment="center"
         android:textColor="@color/verdePaloMuyClaro"
-        android:textColorHint="@color/verdePaloMuyClaro"
-        android:fontFamily="@font/manrope_bold"
-        android:paddingHorizontal="40dp"/>
+        android:textColorHint="@color/verdePaloMuyClaro" />
 
     <Button
         android:id="@+id/btn_entrar"
         android:layout_width="344dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:enabled="true"
-        android:text="Entrar"
-        android:textSize="18sp"
         android:layout_marginTop="20dp"
-        android:textAllCaps="false"
-        android:fontFamily="@font/manrope_bold"
         android:background="@drawable/round_button"
-        app:backgroundTint="@color/colorElementosClaros"
+        android:enabled="true"
+        android:fontFamily="@font/manrope_bold"
+        android:paddingHorizontal="40dp"
+        android:text="@string/inicioSesion"
+        android:textAllCaps="false"
         android:textColor="@color/verdePaloMuyClaro"
-        android:paddingHorizontal="40dp"/>
+        android:textSize="18sp"
+        app:backgroundTint="@color/colorElementosClaros" />
 
     <TextView
         android:id="@+id/tv_olvidarPass"

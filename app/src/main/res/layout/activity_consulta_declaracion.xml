@@ -45,15 +45,16 @@
         android:background="@color/verdePaloClaro"/>
 
     <Spinner
+
         android:layout_width="325dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:background="@color/verdePaloClaro"
         android:entries="@array/tipoDeclaracion"
         android:fontFamily="@font/manrope_bold"
         android:paddingHorizontal="10dp"
         android:paddingVertical="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
         android:textColor="@color/colorElementosOscuros"
         android:textColorHint="@color/colorElementosOscuros" />
 
@@ -75,15 +76,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:enabled="true"
-        android:text="Buscar"
-        android:textSize="18sp"
         android:layout_marginTop="270dp"
-        android:textAllCaps="false"
-        android:fontFamily="@font/manrope_bold"
         android:background="@drawable/round_button"
-        app:backgroundTint="@color/colorElementosClaros"
+        android:enabled="true"
+        android:fontFamily="@font/manrope_bold"
+        android:paddingHorizontal="40dp"
+        android:text="Buscar"
+        android:textAllCaps="false"
         android:textColor="@color/verdePaloMuyClaro"
-        android:paddingHorizontal="40dp" />
+        android:textSize="18sp"
+        app:backgroundTint="@color/colorElementosClaros" />
+
 
 </LinearLayout>

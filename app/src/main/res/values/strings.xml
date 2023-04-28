@@ -34,4 +34,5 @@
     <string name="introduceContrasenia">Introduzca su nueva contraseña</string>
     <string name="nuevaContrasenia">Nueva contraseña</string>
     <string name="repiteContrasenia">Repita su nueva contraseña</string>
+    <string name="Star">Iniciar</string>
 </resources>
