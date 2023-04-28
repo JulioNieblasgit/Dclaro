@@ -34,7 +34,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/manrope_regular"
-        android:text="Bievenido Juan Pérez"
+        android:text="Bievenido"
         android:textColor="@color/colorElementosOscuros"
         android:textSize="18sp" />
 
@@ -83,7 +83,7 @@
         android:enabled="true"
         android:fontFamily="@font/manrope_bold"
         android:paddingHorizontal="40dp"
-        android:text="@string/inicioSesion"
+        android:text="Iniciar"
         android:textAllCaps="false"
         android:textColor="@color/verdePaloMuyClaro"
         android:textSize="18sp"
