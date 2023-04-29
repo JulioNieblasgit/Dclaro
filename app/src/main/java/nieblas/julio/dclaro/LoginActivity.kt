@@ -79,14 +79,13 @@ class LoginActivity : AppCompatActivity() {
         }
 
 
-        //Al momento de hacer click se validaran los datos del campo de texto y si
-        // todo es correcto pasara a la siguiente pantalla
+        //Al momento de hacer click se validaran los datos del campo de texto
 
         binding.btnEntrar.setOnClickListener {
             val rfc = binding.etRfc.text.toString()
             val contrasena = binding.etContrasena.text.toString()
 
-                //Valida campos de texto, que no se encuentren vacios
+            //Valida campos de texto, que no se encuentren vacios
             if (rfc.isNotEmpty() && contrasena.isNotEmpty()) {
                 firebaseAuth.signInWithEmailAndPassword(rfc, contrasena).addOnCompleteListener {
                     //Si tuvo exito pasa a la otra pantalla
