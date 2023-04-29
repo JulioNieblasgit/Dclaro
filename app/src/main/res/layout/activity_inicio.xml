@@ -21,6 +21,19 @@
             app:srcCompat="@drawable/logo1_hdpi"
             android:layout_gravity="center_vertical"/>
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnEntrarLog"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:text="Iniciar" />
+
     </LinearLayout>
 
 </LinearLayout>

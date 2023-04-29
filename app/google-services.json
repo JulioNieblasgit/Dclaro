@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "96512476514",
+    "project_id": "dclaro-cfce0",
+    "storage_bucket": "dclaro-cfce0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96512476514:android:b1c2a7a5737526ce59583b",
+        "android_client_info": {
+          "package_name": "nieblas.julio.dclaro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96512476514-6spbigijpjaeu5pqsi1uinkefo00ru81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU-7wHc-FMbhZNFtP3oqSGU28D48lv1tQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96512476514-6spbigijpjaeu5pqsi1uinkefo00ru81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
