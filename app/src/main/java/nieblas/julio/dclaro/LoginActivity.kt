@@ -15,19 +15,26 @@ import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+
 class LoginActivity : AppCompatActivity() {
 
     lateinit var mGoogleSignInClient: GoogleSignInClient
     private val RC_SIGN_IN = 123
     val COD_LOGOUT = 125
     private lateinit var auth: FirebaseAuth
+    val btn_contra: TextView = findViewById(R.id.tv_olvidarPass)
+    val btn_registrarse: TextView = findViewById(R.id.tv_registrarse)
+    val btn_ingresar: Button = findViewById(R.id.btn_entrar)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        auth = Firebase.auth
 
         //splashscreen
         installSplashScreen()
@@ -56,11 +63,18 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        auth = Firebase.auth
-        val btn_ingresar: Button = findViewById(R.id.btn_entrar)
-
         btn_ingresar.setOnClickListener {
             valida_ingreso()
+        }
+
+        btn_contra.setOnClickListener {
+            val intent: Intent = Intent(this, RestablecerPassActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_registrarse.setOnClickListener {
+            val intent: Intent = Intent(this, RegistroActivity::class.java)
+            startActivity(intent)
         }
     }
 

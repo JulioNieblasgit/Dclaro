@@ -94,35 +94,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:enabled="true" />
+
+    <TextView
+        android:id="@+id/tv_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="¿Eres nuevo? Regístrate"
+        android:textColor="@color/colorElementosOscuros"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/tv_olvidarPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/manrope_regular"
         android:text="¿Olvidaste tu contraseña?"
         android:textColor="@color/colorElementosOscuros"
         android:textSize="14sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/manrope_regular"
-        android:text="Ingresar con huella"
-        android:textColor="@color/colorElementosOscuros"
-        android:textSize="14sp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/healthicons_fingerprint_outline_hdpi" />
 
 </LinearLayout>
