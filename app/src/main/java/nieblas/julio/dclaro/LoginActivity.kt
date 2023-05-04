@@ -1,123 +1,157 @@
 package nieblas.julio.dclaro
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.SignInButton
+import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
+import android.widget.Button
+import android.widget.EditText
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.GoogleAuthProvider
-import nieblas.julio.dclaro.databinding.ActivityLoginBinding
-
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginBinding
-    private lateinit var firebaseAuth: FirebaseAuth
-    private lateinit var googleSignInClient: GoogleSignInClient
-
+    lateinit var mGoogleSignInClient: GoogleSignInClient
+    private val RC_SIGN_IN = 123
+    val COD_LOGOUT = 125
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        binding = ActivityLoginBinding.inflate(layoutInflater)
-        firebaseAuth = FirebaseAuth.getInstance()
+        //splashscreen
+        installSplashScreen()
 
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
-            .requestEmail()
-            .build()
+        // Configure sign-in to request the user's ID, email address, and basic
+        // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
+        // Configure sign-in to request the user's ID, email address, and basic
+        // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
+        val gso =
+            GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build()
+        // Build a GoogleSignInClient with the options specified by gso.
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
-        val googlesigninclient = GoogleSignIn.getClient(this, gso)
-        googlesigninclient.signOut()
+        // Check for existing Google Sign In account, if the user is already signed in
+        // the GoogleSignInAccount will be non-null.
+        // Check for existing Google Sign In account, if the user is already signed in
+        // the GoogleSignInAccount will be non-null.
 
-        fun updateUI(account: GoogleSignInAccount) {
-            val credencial = GoogleAuthProvider.getCredential(account.idToken, null)
-            firebaseAuth.signInWithCredential(credencial).addOnCompleteListener {
-                if (it.isSuccessful) {
-                    val intent: Intent = Intent(this, DeclaracionesPagadasActivity::class.java)
-                    startActivity(intent)
-                } else {
-                    Toast.makeText(
-                        this,
-                        "No se pudo acceder a la cuenta de Google",
-                        Toast.LENGTH_SHORT
-                    )
-                        .show()
-                }
-            }
+        var sign_in_button: SignInButton = findViewById(R.id.btn_entrarGoogle)
+        sign_in_button.setSize(SignInButton.SIZE_WIDE)
+
+
+        sign_in_button.setOnClickListener {
+            val signInIntent = mGoogleSignInClient.signInIntent
+            startActivityForResult(signInIntent, RC_SIGN_IN)
+
         }
 
-        fun handleResults(task: Task<GoogleSignInAccount>) {
-            if (task.isSuccessful) {
-                val account: GoogleSignInAccount? = task.result
-                if (account != null) {
-                    updateUI(account)
-                }
-            } else {
-                Toast.makeText(this, task.exception.toString(), Toast.LENGTH_SHORT).show()
-            }
-        }
+        auth = Firebase.auth
+        val btn_ingresar: Button = findViewById(R.id.btn_entrar)
 
-        val launcher =
-            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-                if (result.resultCode == Activity.RESULT_OK) {
-                    val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
-                    handleResults(task)
-                }
-            }
-
-        fun signInGoogle() {
-            val signInIntent = googleSignInClient.signInIntent
-            launcher.launch(signInIntent)
-        }
-
-
-        //Al momento de hacer click se validaran los datos del campo de texto
-
-        binding.btnEntrar.setOnClickListener {
-            val rfc = binding.etRfc.text.toString()
-            val contrasena = binding.etContrasena.text.toString()
-
-            //Valida campos de texto, que no se encuentren vacios
-            if (rfc.isNotEmpty() && contrasena.isNotEmpty()) {
-                firebaseAuth.signInWithEmailAndPassword(rfc, contrasena).addOnCompleteListener {
-                    //Si tuvo exito pasa a la otra pantalla
-                    if (it.isSuccessful) {
-                        val intent: Intent = Intent(this, DeclaracionesPagadasActivity::class.java)
-                        startActivity(intent)
-                    } else {
-
-                        //Crea un usuario con base a los campos de textos
-                        /**
-                         *  firebaseAuth.createUserWithEmailAndPassword(rfc,contrasena).addOnCompleteListener {
-                        if(it.isSuccessful){
-                        val intent: Intent = Intent(this, DeclaracionesPagadasActivity::class.java)
-                        startActivity(intent)
-                        }else{
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_LONG).show()
-
-                        }
-                        }
-                         */
-                        //Mensaje de error
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_LONG).show()
-                    }
-                }
-
-            } else {
-                Toast.makeText(this, "Es necesario llenar los campos de texto.", Toast.LENGTH_LONG)
-                    .show()
-            }
-
+        btn_ingresar.setOnClickListener {
+            valida_ingreso()
         }
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
+        if (requestCode == RC_SIGN_IN) {
+            // The Task returned from this call is always completed, no need to attach
+            // a listener.
+
+            val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
+            handleSignInResult(task)
+        }
+
+
+        if (requestCode == COD_LOGOUT) {
+            signOut()
+        }
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        val account = GoogleSignIn.getLastSignedInAccount(this)
+
+        updateUI(account)
+    }
+
+    private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
+        try {
+            val account = completedTask.getResult(ApiException::class.java)
+
+            // Signed in successfully, show authenticated UI.
+            updateUI(account)
+        } catch (e: ApiException) {
+            // The ApiException status code indicates the detailed failure reason.
+            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            Log.w("TAG", "signInResult:failed code=" + e.statusCode)
+            updateUI(null)
+        }
+    }
+
+    private fun updateUI(account: GoogleSignInAccount?) {
+        if (account != null) {
+
+            val intent = Intent(this, LoginActivity::class.java)
+
+            intent.putExtra("name", account.displayName)
+            intent.putExtra("email", account.email)
+
+
+            startActivityForResult(intent, COD_LOGOUT)
+        }
+    }
+
+    private fun signOut() {
+        mGoogleSignInClient.signOut().addOnCompleteListener(this) {
+            Toast.makeText(this, "Sesión Expirada", Toast.LENGTH_SHORT)
+        }
+    }
+
+    private fun valida_ingreso() {
+        val et_correo: EditText = findViewById(R.id.et_rfc)
+        val et_contra: EditText = findViewById(R.id.et_contrasena)
+
+        var correo: String = et_correo.text.toString()
+        var contra: String = et_contra.text.toString()
+
+        if (!correo.isNullOrBlank() && !contra.isNullOrBlank()) {
+            ingresaFirebase(correo, contra)
+        } else {
+            Toast.makeText(this, "Ingresar datos", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun ingresaFirebase(email: String, password: String) {
+        auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
+            if (task.isSuccessful) {
+                // Sign in success, update UI with the signed-in user's information
+                val user = auth.currentUser
+
+                val intent: Intent = Intent(this, ConsultaDeclaracionActivity::class.java)
+                startActivity(intent)
+
+            } else {
+                // If sign in fails, display a message to the user.
+                Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
 
 }
